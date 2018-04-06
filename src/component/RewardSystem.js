@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import jobs from "../assets/jobs";
+// import jobs from "../assets/jobs";
 import Tables from "./table";
-import { HashRouter, Route, Router, Link } from "react-router-dom";
+// import { HashRouter, Route, Router, Link } from "react-router-dom";
 import jobFields from "../assets/jobs";
 
 export default class RewardSystem extends Component {
