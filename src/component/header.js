@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, withRouter } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -53,13 +54,9 @@ const Header = () => {
                   />
                 </li>
                 <li class="dropdown">
-                  <a
-                    href="https://dw-fi.intrum.com/dw2/dictionary"
-                    class="navigate"
-                    id="header-nav-dictionary"
-                  >
+                  <Link to="/RewardSystem">
                     <i class="icon icon_profile" />Reward System
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right hidden-xs">
@@ -83,4 +80,4 @@ const Header = () => {
     </div>
   );
 };
-export default Header;
+export default withRouter(Header);
