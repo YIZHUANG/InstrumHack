@@ -1,9 +1,19 @@
-.header_container{
-  .fa{
-    padding:30px;
+.header_container {
+  .fa {
+    padding: 30px;
     font-size: 2rem;
   }
 }
-.table{
-  margin:auto;
+.table {
+  margin: auto;
+}
+.Container {
+  .table_container {
+    margin:auto;
+    height:130rem;
+  }
+
+  .table_content {
+
+  }
 }
