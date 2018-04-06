@@ -14,22 +14,27 @@ const styles = {
   wordWrap: "break-word"
 };
 
-const Tables = ({ job, key }) => {
+const Tables = ({ jobs, key }) => {
   return (
     <Table key={key} className="table" style={{ width: "70%" }}>
       <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
         <TableRow>
           <TableHeaderColumn>description</TableHeaderColumn>
           <TableHeaderColumn>industry</TableHeaderColumn>
+          <TableHeaderColumn>Localtion</TableHeaderColumn>
         </TableRow>
       </TableHeader>
       <TableBody displayRowCheckbox={false}>
-        <TableRow>
-          <TableRowColumn className="api_col" style={styles}>
-            {job.description}
-          </TableRowColumn>
-          <TableRowColumn style={styles}>{job.description}</TableRowColumn>
-        </TableRow>
+        {jobs.map((job, index) => (
+          <TableRow>
+            {" "}
+            <TableRowColumn className="api_col" style={styles}>
+              {job.description}
+            </TableRowColumn>
+            <TableRowColumn style={styles}>{job.industry}</TableRowColumn>
+            <TableRowColumn style={styles}>{job.address}</TableRowColumn>
+          </TableRow>
+        ))}
       </TableBody>
     </Table>
   );

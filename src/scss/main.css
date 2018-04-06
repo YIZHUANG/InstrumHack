@@ -8,3 +8,7 @@
 
 .table {
   margin: auto; }
+
+.Container .table_container {
+  margin: auto;
+  height: 130rem; }
