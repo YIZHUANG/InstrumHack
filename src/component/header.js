@@ -53,21 +53,10 @@ const Header = () => {
                     id="change-language"
                   />
                 </li>
-<<<<<<< HEAD
-                <li className="dropdown">
-                  <a
-                    href="https://dw-fi.intrum.com/dw2/dictionary"
-                    className="navigate"
-                    id="header-nav-dictionary"
-                  >
-                    <i className="icon icon_profile" />Reward System
-                  </a>
-=======
                 <li class="dropdown">
                   <Link to="/RewardSystem">
                     <i class="icon icon_profile" />Reward System
                   </Link>
->>>>>>> c37306bf94f0284b144d5b0d63d75cfd82b4a227
                 </li>
               </ul>
               <ul className="nav navbar-nav navbar-right hidden-xs">
