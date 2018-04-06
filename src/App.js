@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import Header from "./component/header";
-import ReactTable from "react-table";
+import Bills from './component/bills';
+// import ReactTable from "react-table";
 import Home from './component/home';
 
 class App extends Component {
@@ -11,6 +12,8 @@ class App extends Component {
       <div>
       <Header/>
       <Home />
+      <Bills />
+
       </div>
     );
   }

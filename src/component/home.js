@@ -4,13 +4,13 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Container">
-        <div class="main-header-line">
-          <div class="container">
+        <div className="main-header-line">
+          <div className="container">
             <h1>Lower your debt today</h1>
             <p>We will help you</p>
           </div>
         </div>
-        <div class="table_container" />
+        <div className="table_container" />
       </div>
     );
   }
