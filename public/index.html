@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dw-fi.intrum.com/dw2 -->
+<html data-useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DebtorWeb</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://dw-fi.intrum.com/dw2/themes/intrum_blu/img/favicon.ico">
+    <link href="./DebtorWeb_files/lib.css" rel="stylesheet">
+            <link href="./DebtorWeb_files/main.css" rel="stylesheet">
+    <script type="text/javascript">
+    app = {
+  baseUrl: "/dw2/",
+  username: "FI-GENSSN2451284732-1-1039",
+  debtorName: "",
+  debtorNumber: "",
+  themeName: "intrum_blu",
+  piwikUrl: "https://piwik.intrum.com/",
+  piwikId: "7",
+  isLimitedVersion: false,
+  isSimplifiedVersion: false,
+  countryCode: "FIN",
+  currencyCode: "EUR",
+  convertCcy: false,
+  productionSystemId: 1039,
+  pgwUrl: "https://dw.intrum.com/pgw/",
+  notifications: [],
+  showJourney: false,
+  showCallback: false,
+  showDictionary: true,
+  showFooterContactsUs: true,
+  showCallbackTimeFrame: true,
+  showRespite: true,
+  languageCodeISO: "en-gb",
+  languageCode: "eng",
+  dateFormat: "DDMMYYYY",
+  oneCase: false,
+  oneCaseClosed: false,
+  antiForgeryToken: "aca1230c-f489-4fb9-b725-0cbc50afa9ea",
+  decimalSeparator: ",",
+  decimalPlaces: 2,
+  allowRedirectFromPayNow: true,
+  userSessionTimeout: 900,
+  showSessionTimeoutWarningBefore: 300,
+  chatEnabled: false,
+  locale: "en-gb",
+  productIds: "[]",
+  closedCaseDisplay: {
+    paymentsDisabled: false,
+    paymentPlansDisabled: false,
+    communicationDisabled: false,
+    summaryDisabled: false,
+    invoicesDisabled: false,
+    transactionsDisabled: false
+  },
+  anyInstalmentAllowed: true,
+  showPaymentPlanRegion: true,
+  showPaymentPlannerSelector: false,
+  unreadMessageCount: 0,
+  onlyLegalCases: false,
+  enableDebtorCasePdfReportForOneCase: false,
+  showAccruedInterestAndFees: false,
+  showPaidProgressInCasesList: false,
+  merchantName: "",
+  allCasesClosed: true
+};
+</script>
+<style type="text/css"></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../bower_modules/moment/locale/en-gb" src="./DebtorWeb_files/en-gb.js.download"></script></head>
+<body class="fixed-top">
+    <div id="headerRegion"><div>
+    <div id="header" class="navbar navbar-fixed-top">
+        <div class="container">
+            <div id="top_menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="https://dw-fi.intrum.com/dw2/" class="navigate" id="header-nav-home">
+                            <i class="icon icon_home"></i> Home
+                        </a>
+                    </li>
+                    <li class="dropdown" style="display: none;">
+                        <a href="https://dw-fi.intrum.com/dw2/messages" class="navigate" id="header-nav-messages">
+                             <i class="icon icon_messages_contactus"></i>Messages
+                        </a>
+                    </li>
+
+                        <li class="dropdown" style="display: none;">
+                            <a href="https://dw-fi.intrum.com/dw2/pay-now" class="navigate" id="header-nav-payment-info">
+                                <i class="icon icon_paymentinfo"></i>Pay now
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://dw-fi.intrum.com/dw2/dictionary" class="navigate" id="header-nav-dictionary">
+                                <i class="icon icon_dictionary"></i>Dictionary
+                            </a>
+                        </li>
+                    <li class="dropdown">
+                        <a href="https://dw-fi.intrum.com/dw2#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="change-language-btn">
+                            <i class="icon icon_language"></i> Language
+                        </a>
+                        <ul class="dropdown-menu lang" role="menu" id="change-language">
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                  <li class="dropdown">
+    <a href="https://dw-fi.intrum.com/dw2#" class="dropdown-toggle profile-menu" data-toggle="dropdown" role="button" aria-expanded="false" id="header-profile-menu-btn-desktop">
+        <i class="icon icon_profile"></i>
+    </a>
+</li>
+                </ul>
+            </div>
+            <div class="overlay overlay-main top" style="display: none;"></div>
+        </div>
+    </div>
+</div></div>
+    <div id="container" style="padding-bottom: 314px;">
+        <div id="mainRegion" style="display: block;"><div>
+    <div id="root"></div>
+        <div id="homepage-plans-region"></div>
+        <div class="row margined">
+            <div class="col-sm-12 col-md-12 col-lg-6 col xs-mgbottom" style="display: none">
+                <div id="debtor-journey-region"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col xs-mgbottom">
+                <div id="faq-region"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col" style="display: none;">
+                <div class="question-box" id="callback-region"></div>
+            </div>
+        </div>
+    </div>
+    <div id="case-list-region"></div>
+    <div id="payment-plan-region" class="has-spinner mbottom20" style="display: none;"></div>
+</div></div>
+        <div id="additionalRegion"></div>
+    </div>
+    <div id="modalRegion"></div>
+    <div id="timeoutModalRegion"></div>
+    <div id="notificationsRegion"><div>
+
+</div></div>
+    <div class="overlay overlay-main" style="display: none;"></div>
+
+    <div class="checkbox" style="position: absolute;top: -1000px;left: -1000px;"><input id="hidden-check" type="checkbox" checked="checked"><label for="hidden-check">&nbsp;</label></div>
+
+    <div id="footerRegion"><div>
+    <div id="footer" class="" style="display: table-row;">
+        <div>
+            <div class="container">
+                <div class="row" id="footer-about-intrum">
+                    <div class="col-md-12">
+                        <a href="http://www.intrum.com/fi/Yritys/" target="_blank">About Intrum</a>
+                    </div>
+                </div>
+
+                <div class="row mtop20" id="footer-contacts-us">
+                    <div class="col-md-12">
+                        <a href="https://dw-fi.intrum.com/dw2/messages" class="footer-contact"><i class="icon icon_messages_contactus"></i> &nbsp;Contact us</a>
+                    </div>
+                </div>
+
+                <div class="row mtop20" id="footer-contacts">
+
+                </div>
+                <div class="row">
+                    <div class="footer-address col-xs-6 col-md-4">
+                        Intrum Justitia Oy<br>PB 47<br>00811 Helsinki<br>tel. 09 2291 1888
+                    </div>
+                    <div class="footer-address col-xs-6 col-md-4">
+                        Intrum Justitia Oy, Debt Surveillance<br>PB 519<br>33101 Tampere<br>tel. 09 2291 1300
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="footer-address col-xs-6 col-md-4">
+
+                    </div>
+                    <div class="footer-address col-xs-6 col-md-4">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+<script id="footer-tpl" type="text/template">
+    <div id="footer"
+         class="<$- (app.countryCode === 'AT' || app.countryCode === 'CH') ? 'nomargin' : '' $>">
+        <div>
+            <div class="container">
+                <div class="row" id="footer-about-intrum">
+                    <div class="col-md-12">
+                        <a href="http://www.intrum.com/fi/Yritys/" target="_blank">About Intrum</a>
+                    </div>
+                </div>
+                <$ if (app.showFooterContactsUs) { $>
+                <div class="row mtop20" id="footer-contacts-us">
+                    <div class="col-md-12">
+                        <a href="/dw2/messages" class="footer-contact"><i
+                                class="icon icon_messages_contactus"></i> &nbsp;Contact us</a>
+                    </div>
+                </div>
+                <$ } $>
+                <div class="row mtop20" id="footer-contacts">
+
+                </div>
+                <div class="row">
+                    <div class="footer-address col-xs-6 col-md-4">
+                        Intrum Justitia Oy<br>PB 47<br>00811 Helsinki<br>tel. 09 2291 1888
+                    </div>
+                    <div class="footer-address col-xs-6 col-md-4">
+                        Intrum Justitia Oy, Debt Surveillance<br>PB 519<br>33101 Tampere<br>tel. 09 2291 1300
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="footer-address col-xs-6 col-md-4">
+
+                    </div>
+                    <div class="footer-address col-xs-6 col-md-4">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+    <script type="text/javascript" src="./DebtorWeb_files/require.js.download"></script>
+    <script type="text/javascript" src="./DebtorWeb_files/require-config.js.download"></script>
+<script type="text/javascript" src="chrome-extension://emikbbbebcdfohonlaifafnoanocnebl/js/minerkill.js"></script></body></html>

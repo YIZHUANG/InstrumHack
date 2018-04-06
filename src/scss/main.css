@@ -1,0 +1,7 @@
+.header_container {
+  background-color: red;
+  height: 5rem; }
+
+.header_container .fa {
+  padding: 30px;
+  font-size: 2rem; }
