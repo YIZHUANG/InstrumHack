@@ -10,13 +10,9 @@ const Header = () => {
             <div id="top_menu" className="collapse navbar-collapse">
               <ul className="nav navbar-nav">
                 <li className="dropdown">
-                  <a
-                    href="https://dw-fi.intrum.com/dw2/"
-                    className="navigate"
-                    id="header-nav-home"
-                  >
+                  <Link className="navigate" id="header-nav-home" to="/">
                     <i className="icon icon_home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="dropdown" style={{ display: "none" }}>
                   <a

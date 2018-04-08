@@ -1,6 +1,12 @@
 import React, { Component } from "react";
-
+import { thead, Table } from "react-bootstrap";
+import CastTable from "./caseTable";
+import castList from "../assets/caseList";
 export default class Home extends Component {
+  renderCaseList() {
+    return castList.map((item, index) => <CastTable key={index} data={item} />);
+  }
+
   render() {
     return (
       <div className="Container">
@@ -10,7 +16,19 @@ export default class Home extends Component {
             <p>We will help you</p>
           </div>
         </div>
-        <div className="table_container" />
+        <div className="table_container">
+          <Table striped bordered condensed hover>
+            <thead>
+              <tr>
+                <th>Case number</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Due date</th>
+              </tr>
+            </thead>
+            <tbody>{this.renderCaseList()}</tbody>
+          </Table>
+        </div>
       </div>
     );
   }

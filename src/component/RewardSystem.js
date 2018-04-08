@@ -5,13 +5,14 @@ import Tables from "./table";
 import jobFields from "../assets/jobs";
 import SearchBar from "material-ui-search-bar";
 import JobList from "../assets/jobList";
+import { thead, Table } from "react-bootstrap";
+
 export default class RewardSystem extends Component {
   renderJobs() {
     return JobList.map((job, index) => <Tables key={index} job={job} />);
   }
 
   render() {
-    console.log(JobList);
     return (
       <div className="Container">
         <div class="main-header-line">
@@ -32,7 +33,17 @@ export default class RewardSystem extends Component {
               }}
             />
           </div>
-          <Tables  jobs={JobList} />
+          <Table striped bordered condensed hover>
+            <thead>
+              <tr>
+                <th>Case number</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Due date</th>
+              </tr>
+            </thead>
+            <tbody>{this.renderJobs()}</tbody>
+          </Table>
         </div>
       </div>
     );
