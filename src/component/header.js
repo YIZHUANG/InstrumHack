@@ -54,6 +54,11 @@ const Header = () => {
                     <i class="icon icon_profile" />Reward System
                   </Link>
                 </li>
+                <li class="dropdown">
+                  <Link to="/CallCenter">
+                    <i class="icon icon_profile" />Call Center
+                  </Link>
+                </li>
               </ul>
               <ul className="nav navbar-nav navbar-right hidden-xs">
                 <li className="dropdown">

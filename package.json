@@ -16,7 +16,10 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-table": "^6.8.0",
-    "simple-fixtures": "^1.0.1"
+    "simple-fixtures": "^1.0.1",
+    "vcap_services": "^0.3.4",
+    "watson-developer-cloud": "^3.0.5",
+    "watson-speech": "^0.34.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -27,5 +30,18 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YIZHUANG/InstrumHack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YIZHUANG/InstrumHack/issues"
+  },
+  "homepage": "https://github.com/YIZHUANG/InstrumHack#readme"
 }
