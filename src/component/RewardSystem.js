@@ -17,8 +17,8 @@ export default class RewardSystem extends Component {
       <div className="Container">
         <div class="main-header-line">
           <div class="container">
-            <h1>Reward System</h1>
-            <p>Bitch!</p>
+            <h1>Jobs</h1>
+            <p>More ways to help</p>
           </div>
         </div>
         <div className="table_container">
@@ -33,7 +33,7 @@ export default class RewardSystem extends Component {
               }}
             />
           </div>
-          <Table striped bordered condensed hover>
+          <Table striped bordered condensed hover style= {{ marginTop: 20}}>
             <thead>
               <tr>
                 <th>Case number</th>

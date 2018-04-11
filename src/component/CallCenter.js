@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 import recognizeMic from 'watson-speech/speech-to-text/recognize-microphone';
 
@@ -35,10 +36,17 @@ class CallCenter extends Component {
   }
   render() {
     return (
+      <div className="Container">
+      <div className="main-header-line">
+      <div className="container">
+      <h1>Call Center</h1>
+      <p>Speak to us about your inquiries</p>
+      </div>
+      </div>
       <div className="App">
-        <button onClick={this.onListenClick.bind(this)}>Listen to microphone</button>
+        <RaisedButton style={{marginTop:50}} onClick={this.onListenClick.bind(this)} label="Click to speak" />
         <div style={{fontSize: '40px'}}>{this.state.text}</div>
-
+      </div>
       </div>
     );
   }
