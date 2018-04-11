@@ -65,6 +65,8 @@ const GridListExampleSimple = () => (
       {/* <Subheader>Job Categories</Subheader> */}
       {tilesData.map((tile) => (
         <GridTile
+            //insert function to show jobs by category
+          onClick={()=>(console.log('clicked'))}
           key={tile.img}
           title={tile.title}
         //   subtitle={<span>by <b>{tile.author}</b></span>}

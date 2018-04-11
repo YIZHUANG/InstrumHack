@@ -16,8 +16,8 @@ export default class RewardSystem extends Component {
   render() {
     return (
       <div className="Container">
-        <div class="main-header-line">
-          <div class="container">
+        <div className="main-header-line">
+          <div className="container">
             <h1>Jobs</h1>
             <p>More ways to help</p>
           </div>

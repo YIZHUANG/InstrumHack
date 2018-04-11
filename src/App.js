@@ -4,7 +4,7 @@ import "./App.css";
 import { MuiThemeProvider } from "material-ui/styles";
 
 import Header from "./component/header";
-import Home from "./component/home";
+import home from "./component/home";
 import RewardSystem from "./component/RewardSystem";
 import CallCenter from "./component/CallCenter";
 
@@ -18,7 +18,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/RewardSystem" component={RewardSystem} />
               <Route exact path="/CallCenter" component={CallCenter} />
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={home} />
             </Switch>
           </div>
         </BrowserRouter>

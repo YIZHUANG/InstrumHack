@@ -50,14 +50,14 @@ const Header = () => {
                     id="change-language"
                   />
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <Link to="/RewardSystem">
-                    <i class="icon icon_profile" />Reward System
+                    <i className="icon icon_profile" />Reward System
                   </Link>
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <Link to="/CallCenter">
-                    <i class="icon icon_profile" />Call Center
+                    <i className="icon icon_profile" />Call Center
                   </Link>
                 </li>
               </ul>
