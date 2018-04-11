@@ -52,7 +52,7 @@ const Header = () => {
                 </li>
                 <li className="dropdown">
                   <Link to="/RewardSystem">
-                  <i className="material-icons">work</i> Jobs
+                  <i className="material-icons">work</i> Rewards
                   </Link>
                 </li>
                 <li class="dropdown">
