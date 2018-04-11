@@ -18,7 +18,7 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="table_container">
-          {/* <Table striped bordered condensed hover>
+          <Table striped bordered condensed hover>
             <thead>
               <tr>
                 <th>Case number</th>
@@ -28,8 +28,8 @@ export default class Home extends Component {
               </tr>
             </thead>
             <tbody>{this.renderCaseList()}</tbody>
-          </Table> */}
-          {/* <GridListExampleSimple/> */}
+          </Table>
+
         </div>
       </div>
     );
