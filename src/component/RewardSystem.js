@@ -18,9 +18,20 @@ export default class RewardSystem extends Component {
       <div className="Container">
         <div className="main-header-line">
           <div className="container">
-            <h1>Jobs</h1>
-            <p>More ways to help</p>
+            <h1>Rewards</h1>
+            <p>More ways to Finance</p>
           </div>
+        </div>
+        <div style={{fontFamily: 'Arial', textAlign: 'center', marginTop: 50}}>
+          <p style={{fontSize: 16}}><b style={{fontSize: 18}}>Rewards</b> are a brand new way to way to finance your debt. Discover various temporary positions based on your skills and preference.
+         Take charge of your finance, <br/> learn new skills and gain trust. Choose from a variety of open and temporary Jobs to lower your debt amount. simply dummy text of the printing and typesetting
+            industry. <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         <br/>
+         <br/>
+         <p style={{fontFamily: 'Arial', textAlign: 'center'}}><b>LOWER YOUR DEBT</b> We care about helping you lower your debt. Reduce your debt by working temporary positions while we take care of reducing your debt. Choose jobs based on various categories</p>
+         <p style={{fontFamily: 'Arial', textAlign: 'center'}}><b>GAIN EXPERIENCE</b> Gain skills and Job experience as you take on various Job opportunities. Add skills to your profile to be accepted into more Job varieties</p>
+         <p style={{fontFamily: 'Arial', textAlign: 'center'}}><b>LOWER YOUR DEBT</b> We care about helping you lower your debt. Reduce your debt by working temporary positions while we take care of reducing your debt. Choose jobs based on various categories</p>
+
         </div>
         <div className="table_container">
           <div className="table_content">
@@ -30,7 +41,7 @@ export default class RewardSystem extends Component {
               style={{
                 margin: "0 auto",
                 maxWidth: 400,
-                marginTop: 20,
+                marginTop: 60,
                 marginBottom: 20
               }}
             />

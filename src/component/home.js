@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { thead, Table } from "react-bootstrap";
 import CastTable from "./caseTable";
 import castList from "../assets/caseList";
+import CardExampleExpandable from '../component/casesCard'
+
 // import GridListExampleSimple from '../component/CategoryGrid'
 export default class Home extends Component {
-  renderCaseList() {
-    return castList.map((item, index) => <CastTable key={index} data={item} />);
-  }
+  // renderCaseList() {
+  //   return castList.map((item, index) => <CastTable key={index} data={item} />);
+  // }
 
   render() {
     return (
@@ -17,7 +19,8 @@ export default class Home extends Component {
             <p>We will help you</p>
           </div>
         </div>
-        <div className="table_container">
+        <CardExampleExpandable/>
+        {/* <div className="table_container">
           <Table striped bordered condensed hover>
             <thead>
               <tr>
@@ -30,7 +33,7 @@ export default class Home extends Component {
             <tbody>{this.renderCaseList()}</tbody>
           </Table>
 
-        </div>
+        </div> */}
       </div>
     );
   }

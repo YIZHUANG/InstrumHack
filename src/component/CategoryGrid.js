@@ -37,7 +37,7 @@ const GridListExampleSimple = () => (
       {categorys.map((tile) => (
         <GridTile 
             //insert function to show jobs by category
-          onClick={()=>(console.log('clicked'))}
+          onClick={()=>(console.log(tile.img))}
           key={tile.img}
           title={tile.title}
         //   subtitle={<span>by <b>{tile.author}</b></span>}
