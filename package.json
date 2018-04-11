@@ -15,6 +15,7 @@
     "react-dom": "^16.3.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
+    "react-skylight": "^0.5.1",
     "react-table": "^6.8.0",
     "simple-fixtures": "^1.0.1",
     "vcap_services": "^0.3.4",

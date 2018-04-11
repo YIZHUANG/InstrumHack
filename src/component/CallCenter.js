@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-
+import CareJobs from './careJobs';
 import recognizeMic from 'watson-speech/speech-to-text/recognize-microphone';
 
 class CallCenter extends Component {
@@ -47,6 +47,7 @@ class CallCenter extends Component {
         <RaisedButton style={{marginTop:50}} onClick={this.onListenClick.bind(this)} label="Click to speak" />
         <div style={{fontSize: '40px'}}>{this.state.text}</div>
       </div>
+      <CareJobs />
       </div>
     );
   }
