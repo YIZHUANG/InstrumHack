@@ -8,14 +8,18 @@
     "server": "nodemon server.js"
   },
   "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "express-rate-limit": "^2.11.0",
     "express-secure-only": "^0.2.1",
+    "morgan": "^1.9.0",
     "nodemon": "^1.17.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0",
+    "request": "^2.85.0",
     "vcap_services": "^0.3.4",
     "watson-developer-cloud": "^3.0.5",
     "watson-speech": "^0.34.1"
