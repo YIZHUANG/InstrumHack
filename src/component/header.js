@@ -52,12 +52,12 @@ const Header = () => {
                 </li>
                 <li className="dropdown">
                   <Link to="/RewardSystem">
-                  <i className="material-icons">work</i> Jobs
+                  <i className="material-icons">work</i> Rewards
                   </Link>
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <Link to="/CallCenter">
-                  <i className="material-icons">call</i> Callcenter
+                  <i className="material-icons">call</i> Call center
                   </Link>
                 </li>
               </ul>

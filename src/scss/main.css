@@ -12,3 +12,24 @@
 .Container .table_container {
   margin: auto;
   height: 130rem; }
+
+.categoryDiv {
+  position: relative;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  background: white; }
+
+.categoryDiv img {
+  width: 100%; }
+
+.categoryDiv::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  /* hide shadow behind image */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  left: 15%;
+  /* one half of the remaining 30% */
+  height: 100px;
+  bottom: 0; }

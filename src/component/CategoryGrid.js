@@ -3,68 +3,39 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import Paper from 'material-ui/Paper';
+import {categorys} from '../assets/jobCategory'
+
+// import * as images from '../assets/grid';
 
 const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'space-around', 
   },
   gridList: {
-    width: "85%",
+    width: "95%",
     // height: 450,
     overflowY: 'auto',
   },
 };
-
-const tilesData = [
-  {
-    img: '../assets/grid/nurse.jpg',
-    title: 'Outdoor',
-    author: 'jill111',
-  },
-  {
-    img: '/Users/Josiahsingh/Desktop/InstrumHack/src/assets/grid/kitchen.jpg',
-    title: 'IT',
-    author: 'Danson67',
-  },
-  {
-    img: '',
-    title: 'Home',
-    author: 'fancycrave1',
-  },
-  {
-    img: 'images/grid-list/hats-829509_640.jpg',
-    title: 'Care',
-    author: 'Hans',
-  },
-  {
-    img: 'images/grid-list/honey-823614_640.jpg',
-    title: 'Social',
-    author: 'fancycravel',
-  },
-  {
-    img: 'images/grid-list/vegetables-790022_640.jpg',
-    title: 'Sports',
-    author: 'jill111',
-  },
-
-];
-
 
 
 /**
  * A simple example of a scrollable `GridList` containing a [Subheader](/#/components/subheader).
  */
 const GridListExampleSimple = () => (
-  <div style={styles.root}>
+  <div style={styles.root} >
     <GridList
-      cellHeight={180}
+      cellHeight={250}
       style={styles.gridList}
+      cols='3'
+      className="categoryDiv"
     >
       {/* <Subheader>Job Categories</Subheader> */}
-      {tilesData.map((tile) => (
-        <GridTile
+      {categorys.map((tile) => (
+        <GridTile 
             //insert function to show jobs by category
           onClick={()=>(console.log('clicked'))}
           key={tile.img}
@@ -72,7 +43,7 @@ const GridListExampleSimple = () => (
         //   subtitle={<span>by <b>{tile.author}</b></span>}
           actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
         >
-          <img src={tile.img} />
+          <img src={require(`../assets/grid/${tile.img}`)}  />
         </GridTile>
       ))}
     </GridList>
