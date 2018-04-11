@@ -30,7 +30,8 @@ export default class RewardSystem extends Component {
               style={{
                 margin: "0 auto",
                 maxWidth: 400,
-                marginTop: 10
+                marginTop: 20,
+                marginBottom: 20
               }}
             />
           </div>

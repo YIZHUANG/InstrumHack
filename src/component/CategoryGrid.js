@@ -19,17 +19,17 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'images/grid-list/00-52-29-429_640.jpg',
+    img: '../assets/grid/nurse.jpg',
     title: 'Outdoor',
     author: 'jill111',
   },
   {
-    img: 'images/grid-list/camera-813814_640.jpg',
+    img: '/Users/Josiahsingh/Desktop/InstrumHack/src/assets/grid/kitchen.jpg',
     title: 'IT',
     author: 'Danson67',
   },
   {
-    img: 'images/grid-list/morning-819362_640.jpg',
+    img: '',
     title: 'Home',
     author: 'fancycrave1',
   },
