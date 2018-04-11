@@ -50,22 +50,14 @@ const Header = () => {
                     id="change-language"
                   />
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <Link to="/RewardSystem">
-<<<<<<< HEAD
-                    <i className="icon icon_profile" />Reward System
-=======
-                    <i class="icon icon_profile" />Reward System
->>>>>>> parent of 484edaa... add icons to header
+                  <i className="material-icons">work</i> Jobs
                   </Link>
                 </li>
-                <li className="dropdown">
+                <li class="dropdown">
                   <Link to="/CallCenter">
-<<<<<<< HEAD
-                    <i className="icon icon_profile" />Call Center
-=======
-                    <i class="icon icon_profile" />Call Center
->>>>>>> parent of 484edaa... add icons to header
+                  <i className="material-icons">call</i> Callcenter
                   </Link>
                 </li>
               </ul>
