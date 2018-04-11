@@ -19,7 +19,7 @@ const styles = {
 
 const tilesData = [
   {
-    img: '../assets/grid/nurse.jpg',
+    img: '/nurse.jpg',
     title: 'Outdoor',
     author: 'jill111',
   },
@@ -66,13 +66,13 @@ const GridListExampleSimple = () => (
       {tilesData.map((tile) => (
         <GridTile
             //insert function to show jobs by category
-          onClick={()=>(console.log('clicked'))}
+          onClick={()=>(console.log(tile.img))}
           key={tile.img}
           title={tile.title}
         //   subtitle={<span>by <b>{tile.author}</b></span>}
           actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
         >
-          <img src={tile.img} />
+          <img src={`../assets/grid/${tile.img}`} />
         </GridTile>
       ))}
     </GridList>
