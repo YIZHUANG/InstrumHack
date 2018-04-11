@@ -1,5 +1,5 @@
 import React from "react";
-import { thead, Table } from "react-bootstrap";
+// import { thead, Table } from "react-bootstrap";
 
 const Tables = ({ job, key }) => {
   return (
