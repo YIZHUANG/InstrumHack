@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import FontIcon from 'material-ui/FontIcon';
 
 const Header = () => {
   return (
@@ -50,14 +49,14 @@ const Header = () => {
                     id="change-language"
                   />
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <Link to="/RewardSystem">
-                    <i class="icon icon_profile" />Reward System
+                  <i className="material-icons">work</i> Jobs
                   </Link>
                 </li>
                 <li class="dropdown">
                   <Link to="/CallCenter">
-                    <i class="icon icon_profile" />Call Center
+                  <i className="material-icons">call</i> Callcenter
                   </Link>
                 </li>
               </ul>
