@@ -6,6 +6,7 @@ import jobFields from "../assets/jobs";
 import SearchBar from "material-ui-search-bar";
 import JobList from "../assets/jobList";
 import { thead, Table } from "react-bootstrap";
+import GridListExampleSimple from '../component/CategoryGrid'
 
 export default class RewardSystem extends Component {
   renderJobs() {
@@ -33,7 +34,8 @@ export default class RewardSystem extends Component {
               }}
             />
           </div>
-          <Table striped bordered condensed hover style= {{ marginTop: 20}}>
+          <GridListExampleSimple/>
+          {/* <Table striped bordered condensed hover style= {{ marginTop: 20}}>
             <thead>
               <tr>
                 <th>Case number</th>
@@ -43,7 +45,7 @@ export default class RewardSystem extends Component {
               </tr>
             </thead>
             <tbody>{this.renderJobs()}</tbody>
-          </Table>
+          </Table> */}
         </div>
       </div>
     );

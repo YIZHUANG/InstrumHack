@@ -1,4 +1,4 @@
-import { thead, Table } from "react-bootstrap";
+// import { thead, Table } from "react-bootstrap";
 import React from "react";
 const CastTable = ({ data }) => {
   return (
