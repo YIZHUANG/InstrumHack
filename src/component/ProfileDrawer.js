@@ -2,6 +2,7 @@ import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
+import myJobs from './myJobs';
 
 export default class ProfileDrawer extends React.Component {
 
@@ -21,6 +22,7 @@ export default class ProfileDrawer extends React.Component {
         />
         <Drawer width={350} openSecondary={false} open={this.state.open}  >
           <AppBar title="My Open Jobs"  onClick={this.handleToggle}/>
+          <myJobs/>
         </Drawer>
       </div>
     );
