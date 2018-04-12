@@ -32,10 +32,7 @@ class CallCenter extends Component {
     stream.on("error", function(err) {
      console.log(err);
     });
-    document.querySelector("#stop").onclick = () => {
-     stream.stop.bind(stream);
-     self.onSend;
-    };
+    document.querySelector("#stop").onclick = stream.stop.bind(stream);;
    })
    .catch(function(error) {
     console.log(error);
@@ -43,20 +40,13 @@ class CallCenter extends Component {
  }
 
  onSend() {
-  const audio = document.getElementById("audio");
-  audio.setAttribute("src", "");
 
   return axios
    .post("http://localhost:3002/api/text_to_speech", {
     text: this.state.text
    })
    .then(response => {
-    response.blob().then(blob => {
-     const url = window.URL.createObjectURL(blob);
-     this.setState({ loading: false, hasAudio: true });
-     audio.setAttribute("src", url);
-     audio.setAttribute("type", "audio/ogg;codecs=opus");
-    });
+     console.log(response)
    });
  }
 
@@ -77,8 +67,7 @@ class CallCenter extends Component {
       onClick={this.onListenClick.bind(this)}
       label="Click to speak"
      />
-     <RaisedButton id="stop" style={{ marginTop: 50 }} label="Send" />
-     <div style={{ fontSize: "40px" }}>{this.state.text}</div>
+     <RaisedButton id="stop" onClick={this.onSend} style={{ marginTop: 50 }} label="Send" />
     </div>
     <CareJobs />
    </div>

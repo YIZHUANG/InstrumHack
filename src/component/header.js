@@ -55,18 +55,19 @@ const Header = () => {
               </ul>
               <ul className="nav navbar-nav navbar-right hidden-xs">
                 <li className="dropdown" >
-                  <a
+                  <Link
                     // href="https://dw-fi.intrum.com/dw2#"
                     className="dropdown-toggle profile-menu"
                     data-toggle="dropdown"
                     role="button"
                     aria-expanded="false"
                     id="header-profile-menu-btn-desktop"
+                    to="/Profile"
                   >
                     <i
                       className="icon icon_profile"
-                    />                    
-                  </a>
+                    />
+                  </Link>
                 </li>
               </ul>
             </div>

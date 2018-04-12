@@ -12,7 +12,7 @@ var TextToSpeechV1 = require("watson-developer-cloud/text-to-speech/v1");
 const morgan = require("morgan");
 const ToneAnalyzerV3 = require("watson-developer-cloud/tone-analyzer/v3");
 const bodyParser = require("body-parser");
-const apiaiApp = require("apiai")("d0db09819a424589bc1be9e779b15ff7");
+const apiaiApp = require("apiai")("fd5a123ef6d143d490c1301499a9ff19");
 const request = require("request");
 const toneAnalyzer = new ToneAnalyzerV3({
   username: "ec605baf-e3f7-46e7-9721-d33064ea36a9",
@@ -109,16 +109,18 @@ app.post("/api/text_to_speech", (req, res) => {
   return toneAnalyzer.tone(
     {
       tone_input: req.body.text,
-      content_type: "text/plain"
+      content_type: "text/plain",
+                  accept: "audio/wav" // default is audio/ogg; codec=opus
     },
     function(err, tone) {
       if (tone.document_tone.tone_categories[0].tones[0].score > 0.6) {
         textToSpeech
           .synthesize({
             text: "You sound angry, would you like to talk to a real person?",
-            voice: "en-US_AllisonVoice" // Optional voice
+            voice: "en-US_AllisonVoice",// Optional voice
+              accept: "audio/wav"
           })
-          .pipe(res);
+          .pipe(fs.createWriteStream("output.wav"));
       } else {
         let apiai = apiaiApp.textRequest(req.body.text, {
           sessionId: "fgdgdg" // any arbitrary text
@@ -128,9 +130,10 @@ app.post("/api/text_to_speech", (req, res) => {
           return textToSpeech
             .synthesize({
               text: newText,
-              voice: "en-US_AllisonVoice" // Optional voice
+              voice: "en-US_AllisonVoice", // Optional voice,
+                          accept: "audio/wav" // default is audio/ogg; codec=opus
             })
-            .pipe(res);
+            .pipe(fs.createWriteStream("output.wav"));
         });
         apiai.on("error", error => {
           console.log(error);
