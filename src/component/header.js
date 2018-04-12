@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import FontIcon from 'material-ui/FontIcon';
+// import FontIcon from 'material-ui/FontIcon';
 
 const Header = () => {
   return (
@@ -12,37 +12,37 @@ const Header = () => {
               <ul className="nav navbar-nav">
                 <li className="dropdown">
                   <Link className="navigate" id="header-nav-home" to="/">
-                    <i className="icon icon_home" /> Home
+                    <i className="icon icon_home" />
                   </Link>
                 </li>
                 <li className="dropdown" style={{ display: "none" }}>
                   <a
-                    href="https://dw-fi.intrum.com/dw2/messages"
+                    href="#"
                     className="navigate"
                     id="header-nav-messages"
                   >
-                    <i className="icon icon_messages_contactus" />Messages
+                    <i className="icon icon_messages_contactus" />
                   </a>
                 </li>
                 <li className="dropdown">
                   <a
-                    href="https://dw-fi.intrum.com/dw2/dictionary"
+                    href="#"
                     className="navigate"
                     id="header-nav-dictionary"
                   >
-                    <i className="icon icon_dictionary" />Dictionary
+                    <i className="icon icon_dictionary" />
                   </a>
                 </li>
                 <li className="dropdown">
                   <a
-                    href="https://dw-fi.intrum.com/dw2#"
+                    href="#"
                     className="dropdown-toggle"
                     data-toggle="dropdown"
                     role="button"
                     aria-expanded="false"
                     id="change-language-btn"
                   >
-                    <i className="icon icon_language" /> Language
+                    <i className="icon icon_language" /> 
                   </a>
                   <ul
                     className="dropdown-menu lang"
@@ -52,12 +52,12 @@ const Header = () => {
                 </li>
                 <li className="dropdown">
                   <Link to="/RewardSystem">
-                  <i className="material-icons">work</i> Rewards
+                  <i className="material-icons">work</i> 
                   </Link>
                 </li>
                 <li className="dropdown">
                   <Link to="/CallCenter">
-                  <i className="material-icons">call</i> Call center
+                  <i className="material-icons">call</i>
                   </Link>
                 </li>
               </ul>

@@ -1,9 +1,7 @@
 import React from "react";
 import {
   Card,
-  CardTitle,
   CardActions,
-  CardMedia,
   CardHeader,
   CardText
 } from "material-ui/Card";

@@ -71,7 +71,7 @@ app.use(
   })
 );
 // token endpoints
-// **Warning**: these endpoints should probably be guarded with additional authentication & authorization for production use
+// *Warning*: these endpoints should probably be guarded with additional authentication & authorization for production use
 
 // speech to text token endpoint
 var sttAuthService = new watson.AuthorizationV1(
@@ -116,10 +116,9 @@ app.post("/api/text_to_speech", (req, res) => {
         textToSpeech
           .synthesize({
             text: "You sound angry, would you like to talk to a real person?",
-            voice: "en-US_AllisonVoice", // Optional voice
-            accept: "audio/wav" // default is audio/ogg; codec=opus
+            voice: "en-US_AllisonVoice" // Optional voice
           })
-          .pipe(fs.createWriteStream("output.wav"));
+          .pipe(res);
       } else {
         let apiai = apiaiApp.textRequest(req.body.text, {
           sessionId: "fgdgdg" // any arbitrary text
@@ -129,10 +128,9 @@ app.post("/api/text_to_speech", (req, res) => {
           return textToSpeech
             .synthesize({
               text: newText,
-              voice: "en-US_AllisonVoice", // Optional voice
-              accept: "audio/wav" // default is audio/ogg; codec=opus
+              voice: "en-US_AllisonVoice" // Optional voice
             })
-            .pipe(fs.createWriteStream("output.wav"));
+            .pipe(res);
         });
         apiai.on("error", error => {
           console.log(error);

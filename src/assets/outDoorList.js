@@ -1,7 +1,7 @@
 import faker from "faker";
 import { generateFixtures } from "simple-fixtures";
 
-const jobDescription = [];
+// const jobDescription = [];
 
 const outdoorList = {
   title: ()=>faker.random.arrayElement(["Assistant Gardener", "Garden Camp Instructor", "Gardener", "Berry picker","Kiwifruit Picking","Community Relations Specialist"]),

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { GridList, GridTile } from "material-ui/GridList";
 import IconButton from "material-ui/IconButton";
-import Subheader from "material-ui/Subheader";
+// import Subheader from "material-ui/Subheader";
 import StarBorder from "material-ui/svg-icons/toggle/star-border";
-import Paper from "material-ui/Paper";
+// import Paper from "material-ui/Paper";
 import { categorys } from "../assets/jobCategory";
-import SkyLight from "react-skylight";
-import CareJobs from "./careJobs";
+// import SkyLight from "react-skylight";
+// import CareJobs from "./careJobs";
 import Snackbar from "material-ui/Snackbar";
 // import * as images from '../assets/grid';
 import JobList from "../assets/jobList";
 import { Modal, Button } from "react-bootstrap";
-import CardExampleExpandable from "../component/casesCard";
+// import CardExampleExpandable from "../component/casesCard";
 import JobTable from "./jobTable";
 import OutdoorList from "../assets/outDoorList";
 const styles = {
@@ -88,7 +88,7 @@ export default class GridListExampleSimple extends Component {
           cellHeight={250}
           style={styles.gridList}
           cols="3"
-          className="categoryDiv"
+           className="categoryDiv"
         >
           {/* <Subheader>Job Categories</Subheader> */}
           {categorys.map(tile => (
@@ -98,7 +98,7 @@ export default class GridListExampleSimple extends Component {
               title={tile.title}
               //   subtitle={<span>by <b>{tile.author}</b></span>}
               onClick={
-                tile.title == "Care" ? this.handleShow : this.handleShow2
+                tile.title === "Care" ? this.handleShow : this.handleShow2
               }
               actionIcon={
                 <IconButton>
@@ -106,7 +106,7 @@ export default class GridListExampleSimple extends Component {
                 </IconButton>
               }
             >
-              <img src={require(`../assets/grid/${tile.img}`)} />
+              <img src={require(`../assets/grid/${tile.img}`)} alt="local image" />
             </GridTile>
           ))}
         </GridList>

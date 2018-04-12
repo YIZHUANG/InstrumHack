@@ -2,10 +2,10 @@ import React, { Component } from "react";
 // import jobs from "../assets/jobs";
 import Tables from "./table";
 // import { HashRouter, Route, Router, Link } from "react-router-dom";
-import jobFields from "../assets/jobs";
+// import jobFields from "../assets/jobs";
 import SearchBar from "material-ui-search-bar";
 import JobList from "../assets/jobList";
-import { thead, Table } from "react-bootstrap";
+// import { thead, Table } from "react-bootstrap";
 import GridListExampleSimple from "../component/CategoryGrid";
 import { Step, Stepper, StepLabel, StepContent } from "material-ui/Stepper";
 
@@ -21,28 +21,28 @@ export default class RewardSystem extends Component {
         <div className="main-header-line">
           <div className="container">
             <h1>Rewards</h1>
-            <p>More ways to Finance</p>
+            <p>Brand new way to way
+            to finance your debt</p>
           </div>
         </div>
         <div
           style={{ fontFamily: "Arial", textAlign: "center", marginTop: 50 }}
         >
           <p style={{ fontSize: 16 }}>
-            <b style={{ fontSize: 18 }}>Rewards</b> are a brand new way to way
-            to finance your debt. Discover various temporary positions based on
-            your skills and preference. Take charge of your finance, <br />{" "}
-            learn new skills and gain trust. Choose from a variety of open and
-            temporary Jobs to lower your debt amount. simply dummy text of the
-            printing and typesetting industry. <br /> Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.
+            <b style={{ fontSize: 18 }}>Discover</b>
+            <br/>
+            Discover various temporary positions based on
+            your skills and preference. <br/>
+            Take charge of <b>your</b> life and finances while learning new skills and gaining trust in yourself. <br />
           </p>
         </div>
         <div>
           <h1 style={{ fontFamily: "Arial", textAlign: "center" }}>
             How does it work?
           </h1>
+          <h2 style={{ fontFamily: "Arial", textAlign: "center" }}>Each hour you commit = 20 &#8364; OFF your debt </h2>
           <Stepper
-            style={{ marginLeft: 300 }}
+             style={{ marginLeft: 500 }}
             activeStep={this.state.step}
             orientation="vertical"
           >

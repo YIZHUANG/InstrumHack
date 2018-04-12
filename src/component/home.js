@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { thead, Table } from "react-bootstrap";
-import CastTable from "./caseTable";
-import castList from "../assets/caseList";
+// import { thead, Table } from "react-bootstrap";
+// import CastTable from "./caseTable";
+// import castList from "../assets/caseList";
 import CardExampleExpandable from '../component/casesCard'
 
 // import GridListExampleSimple from '../component/CategoryGrid'
