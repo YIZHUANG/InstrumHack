@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import { GridList, GridTile } from "material-ui/GridList";
 import IconButton from "material-ui/IconButton";
-// import Subheader from "material-ui/Subheader";
 import StarBorder from "material-ui/svg-icons/toggle/star-border";
-// import Paper from "material-ui/Paper";
 import { categorys } from "../assets/jobCategory";
-// import SkyLight from "react-skylight";
-// import CareJobs from "./careJobs";
 import Snackbar from "material-ui/Snackbar";
-// import * as images from '../assets/grid';
 import JobList from "../assets/jobList";
 import { Modal, Button } from "react-bootstrap";
-// import CardExampleExpandable from "../component/casesCard";
 import JobTable from "./jobTable";
 import OutdoorList from "../assets/outDoorList";
+// import CardExampleExpandable from "../component/casesCard";
+// import * as images from '../assets/grid';
+// import SkyLight from "react-skylight";
+// import CareJobs from "./careJobs";
+// import Paper from "material-ui/Paper";
+// import Subheader from "material-ui/Subheader";
 const styles = {
   root: {
     display: "flex",

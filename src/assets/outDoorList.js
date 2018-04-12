@@ -14,9 +14,9 @@ const outdoorList = {
       "Implements programs to develop relationships with organizations to build community coalitions and promote health awareness and managed care. Develops and implements approved marketing strategies for events to interested candidates in the service area according to prescribed rules and regulations. "
     ]),
   city: () =>
-    faker.random.arrayElement(["Espoo", "Helsinki", "Vantta", "Tempere"]),
+    faker.random.arrayElement(["Espoo", "Helsinki", "Vantaa", "Tempere"]),
   hours: "8",
-  salary: () => faker.random.number({ min: 10, max: 20 }),
+  salary: () => faker.random.number({ min: 20, max: 20 }),
   requirement: () =>
     faker.random.arrayElement([
       "YOU MUST BE OVER 165CM TALL TO REACH THE FRUIT ON THE VINES. We are Pacific Coast Lodge located in beautiful Mount Maunganui close to the beach!.we ASSIST our guests find work in the Bay of Plenty Area. We have strong relationships with the best contractors in the Bay of Plenty to make sure you are treated well and paid on time.",

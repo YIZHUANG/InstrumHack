@@ -8,6 +8,7 @@ import JobList from "../assets/jobList";
 // import { thead, Table } from "react-bootstrap";
 import GridListExampleSimple from "../component/CategoryGrid";
 import { Step, Stepper, StepLabel, StepContent } from "material-ui/Stepper";
+import ProfileDrawer from './ProfileDrawer';
 
 export default class RewardSystem extends Component {
   state = { step: 0 };
@@ -17,6 +18,8 @@ export default class RewardSystem extends Component {
 
   render() {
     return (
+
+      
       <div className="Container">
         <div className="main-header-line">
           <div className="container">
@@ -40,7 +43,7 @@ export default class RewardSystem extends Component {
           <h1 style={{ fontFamily: "Arial", textAlign: "center" }}>
             How does it work?
           </h1>
-          <h2 style={{ fontFamily: "Arial", textAlign: "center" }}>Each hour you commit = 20 &#8364; OFF your debt </h2>
+          <h2 style={{ fontFamily: "Arial", textAlign: "center" }}>Level 1 : Each hour you commit to instantly becomes <b>20 &#8364; OFF</b> your debt </h2>
           <Stepper
              style={{ marginLeft: 500 }}
             activeStep={this.state.step}
@@ -75,6 +78,7 @@ export default class RewardSystem extends Component {
               </StepContent>
             </Step>
           </Stepper>
+          <ProfileDrawer />
         </div>
         <div className="table_container">
           <div className="table_content">

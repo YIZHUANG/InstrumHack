@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-// import FontIcon from 'material-ui/FontIcon';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const Header = () => {
   return (
@@ -16,20 +16,12 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="dropdown" style={{ display: "none" }}>
-                  <a
-                    href="#"
-                    className="navigate"
-                    id="header-nav-messages"
-                  >
+                  <a href="#" className="navigate" id="header-nav-messages">
                     <i className="icon icon_messages_contactus" />
                   </a>
                 </li>
                 <li className="dropdown">
-                  <a
-                    href="#"
-                    className="navigate"
-                    id="header-nav-dictionary"
-                  >
+                  <a href="#" className="navigate" id="header-nav-dictionary">
                     <i className="icon icon_dictionary" />
                   </a>
                 </li>
@@ -42,7 +34,7 @@ const Header = () => {
                     aria-expanded="false"
                     id="change-language-btn"
                   >
-                    <i className="icon icon_language" /> 
+                    <i className="icon icon_language" />
                   </a>
                   <ul
                     className="dropdown-menu lang"
@@ -52,26 +44,28 @@ const Header = () => {
                 </li>
                 <li className="dropdown">
                   <Link to="/RewardSystem">
-                  <i className="material-icons">work</i> 
+                    <i className="material-icons">work</i>
                   </Link>
                 </li>
                 <li className="dropdown">
                   <Link to="/CallCenter">
-                  <i className="material-icons">call</i>
+                    <i className="material-icons">call</i>
                   </Link>
                 </li>
               </ul>
               <ul className="nav navbar-nav navbar-right hidden-xs">
-                <li className="dropdown">
+                <li className="dropdown" >
                   <a
-                    href="https://dw-fi.intrum.com/dw2#"
+                    // href="https://dw-fi.intrum.com/dw2#"
                     className="dropdown-toggle profile-menu"
                     data-toggle="dropdown"
                     role="button"
                     aria-expanded="false"
                     id="header-profile-menu-btn-desktop"
                   >
-                    <i className="icon icon_profile" />
+                    <i
+                      className="icon icon_profile"
+                    />                    
                   </a>
                 </li>
               </ul>

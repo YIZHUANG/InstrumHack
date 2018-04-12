@@ -8,6 +8,7 @@ import {
 import FlatButton from "material-ui/FlatButton";
 import Paper from "material-ui/Paper";
 import RaisedButton from 'material-ui/RaisedButton';
+import { Link } from "react-router-dom";
 
 const CardExampleExpandable = () => (
   <div style={{ display: "flex" }}>
@@ -44,7 +45,10 @@ const CardExampleExpandable = () => (
         <p style={{marginTop:20}}>Total amount: 600 euro</p>
         <div style={{marginLeft:30,display:'flex'}}>
         <RaisedButton  style={{marginRight:20}} label="Payment plan" />
+        <Link to="/RewardSystem">
         <FlatButton secondary={true} label="No money? No prob!" />
+                  </Link>
+
       </div>
       </Paper>
     </div>

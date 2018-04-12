@@ -14,9 +14,9 @@ const Carefields = {
       "Implements programs to develop relationships with organizations to build community coalitions and promote health awareness and managed care. Develops and implements approved marketing strategies for events to interested candidates in the service area according to prescribed rules and regulations. "
     ]),
   city: () =>
-    faker.random.arrayElement(["Espoo", "Helsinki", "Vantta", "Tempere"]),
+    faker.random.arrayElement(["Espoo", "Helsinki", "Vantaa", "Tempere"]),
   hours: "8",
-  salary: () => faker.random.number({ min: 10, max: 20 }),
+  salary: () => faker.random.number({ min: 20, max: 20 }),
   requirement: () =>
     faker.random.arrayElement([
       "Be at least 18 years old. Demonstrate the ability to communicate well both in writing and orally. Demonstrated ability to work as an effective team member. Demonstrate ability to adapt to a variety of circumstances, situations, and people. Be available to work various shifts. Meet the eligibility requirements of the auto insurance company providing coverage for OCCK vehicles. Have basic computer knowledge. Must have a valid Kansas driver’s license",
