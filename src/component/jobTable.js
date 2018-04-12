@@ -7,18 +7,19 @@ import {
   CardText
 } from "material-ui/Card";
 import FlatButton from "material-ui/FlatButton";
+import { ToastContainer, toast } from 'react-toastify';
 
 const JobTable = ({ job,onApply }) => (
   <div>
     <Card style={{ marginTop: 20, marginLeft: 20, width: 500 }}>
       <CardHeader
         title={job.title}
-        subtitle={`${job.salary} euro per hour in ${job.city}`}
+        subtitle={` in ${job.city}`}
         actAsExpander={true}
         showExpandableButton={true}
       />
       <CardActions>
-        <FlatButton onClick={onApply} label="Easy apply" />
+        <FlatButton onClick={onApply} label="Sign Up" />
         <FlatButton label="Review" />
       </CardActions>
       <CardText expandable={true}>
@@ -30,6 +31,7 @@ const JobTable = ({ job,onApply }) => (
         {job.contactPerson}
       </CardText>
     </Card>
+    
   </div>
 );
 
